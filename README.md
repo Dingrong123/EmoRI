@@ -63,7 +63,9 @@ Currently, the inputs are synchronized at **10 Hz radar / 100 Hz IMU**, with one
 
 ### Raw radar recordings
 
-You can also generate the radar point cloud from your own recorded raw data. In this implementation, the radar point clouds are generated from raw data by `read_6843_accelerated.py`. <u>Note that such code is for TI IWR6843AoP mmWave radar. If you use other types of radars, you should modify that python file</u>. We place the original ADC captures in `data/radar_raw_data/`, named `0516env_new_E_X_Raw_K.bin` (`K = 0, 1, 2, 3 `  for the supplied capture layout).
+The source checkout includes the prepared NPY samples; download the original raw captures separately from the **[raw-data-v1 release](https://github.com/Dingrong123/EmoRI/releases/tag/raw-data-v1)**. The release provides eight original BIN files totaling **5.90 GB** (5,898,240,000 bytes). Download the four files for your chosen environment, or all eight for both environments, and place them in `data/radar_raw_data/`. See [individual downloads and validation instructions](data/radar_raw_data/README.md).
+
+You can also generate the radar point cloud from your own recorded raw data. In this implementation, the radar point clouds are generated from raw data by `read_6843_accelerated.py`. <u>Note that such code is for TI IWR6843AoP mmWave radar. If you use other types of radars, you should modify that python file</u>. The reader expects original ADC captures named `0516env_new_E_X_Raw_K.bin` (`K = 0, 1, 2, 3` for the supplied capture layout).
 
 | Property | Required format |
 | --- | --- |
@@ -72,7 +74,7 @@ You can also generate the radar point cloud from your own recorded raw data. In 
 | Samples | 512 complex ADC samples per chirp; 100 TDM loops per radar frame |
 | Capture length | 300 frames per file; 737,280,000 bytes |
 
-Raw captures are optional and are not included in the prepared sample package. Acquisition and alignment of IMU/GT records are handled before running this code. 
+Raw captures are optional for running the prepared NPY samples. Acquisition and alignment of IMU/GT records are handled before running this code.
 
 ## Citation
 
