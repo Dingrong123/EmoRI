@@ -1,0 +1,215 @@
+{
+  "validation_date": "2026-09-10",
+  "platform": "Windows",
+  "python": "3.13.9",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6",
+    "numba": "0.62.1"
+  },
+  "metric": "sqrt(mean(sum((predicted_position - ground_truth_position)**2, axis=1)))",
+  "ground_truth_alignment": "none",
+  "validation_scope": "Two copied NPY sample sequences, both MSTC backends, code-relative paths from an unrelated working directory, saved plot, and local raw-capture preflight. All sample radar frames have valid velocities; acceleration gap repair is not covered.",
+  "raw_capture_preflight": {
+    "files": 8,
+    "frames": 2400,
+    "passed": true
+  },
+  "data_files": [
+    {
+      "path": "data/point_cloud/pypc_1_1.npy",
+      "shape": [
+        213362,
+        5
+      ],
+      "dtype": "float64",
+      "bytes": 8534608,
+      "sha256": "6472993d0271734e48f2ec6ca9c942f48bc01823d1c90f832a9a9c49212a11a3"
+    },
+    {
+      "path": "data/point_cloud/pypc_1_1_indices.npy",
+      "shape": [
+        1201,
+        1
+      ],
+      "dtype": "int32",
+      "bytes": 4932,
+      "sha256": "aac046b304e8676406872e8a536fe7c640d7341025a185ae1f7dbe91ef609209"
+    },
+    {
+      "path": "data/point_cloud/pypc_2_1.npy",
+      "shape": [
+        207403,
+        5
+      ],
+      "dtype": "float64",
+      "bytes": 8296248,
+      "sha256": "8970649cd19e7f71f0954c30bbdb1ab72190b5812eae3c291d62a466dcc1b852"
+    },
+    {
+      "path": "data/point_cloud/pypc_2_1_indices.npy",
+      "shape": [
+        1201,
+        1
+      ],
+      "dtype": "int32",
+      "bytes": 4932,
+      "sha256": "e9ed60908efe2bc668aa40277fe4f630eb8bb07a5e220ef5e80e7e007e619ce4"
+    },
+    {
+      "path": "data/IMU_and_GT/0516env_aligned_gt_1_1.npy",
+      "shape": [
+        1200,
+        3
+      ],
+      "dtype": "float64",
+      "bytes": 28928,
+      "sha256": "5fe94f1df498b22c93d5a38e729be536f6fb0c481c634f6576b4eba879bcfcbc"
+    },
+    {
+      "path": "data/IMU_and_GT/0516env_aligned_gt_2_1.npy",
+      "shape": [
+        1200,
+        3
+      ],
+      "dtype": "float64",
+      "bytes": 28928,
+      "sha256": "9950133b9e6ed7db39efc160fc6e0403c3f8888d4e76d6cbab2f45725d5a05f8"
+    },
+    {
+      "path": "data/IMU_and_GT/0516env_aligned_imu_1_1.npy",
+      "shape": [
+        12000,
+        6
+      ],
+      "dtype": "float64",
+      "bytes": 576128,
+      "sha256": "4413e08208794d3ec6c4777caed34eaa20777eca5f1658e105d4a51e72576b4c"
+    },
+    {
+      "path": "data/IMU_and_GT/0516env_aligned_imu_2_1.npy",
+      "shape": [
+        12000,
+        6
+      ],
+      "dtype": "float64",
+      "bytes": 576128,
+      "sha256": "aa4a8c1fb8b58ccff164ae741c647c624511e30dd22aeec58c75c07f0bae7cfc"
+    }
+  ],
+  "sequences": [
+    {
+      "env": 1,
+      "experiment": 1,
+      "frames": 1200,
+      "valid_radar_frames": 1200,
+      "static_point_rows": 80783,
+      "map_rows": 4296,
+      "position_rmse_m": 0.19124392166440765,
+      "outputs": {
+        "nradar_motion": {
+          "shape": [
+            1200,
+            3
+          ],
+          "backend_max_abs_difference": 0.0
+        },
+        "nradar_slam": {
+          "shape": [
+            4296,
+            4
+          ],
+          "backend_max_abs_difference": 0.0
+        },
+        "lidar_motion": {
+          "shape": [
+            1200,
+            3
+          ],
+          "backend_max_abs_difference": 0.0
+        }
+      }
+    },
+    {
+      "env": 2,
+      "experiment": 1,
+      "frames": 1200,
+      "valid_radar_frames": 1200,
+      "static_point_rows": 80290,
+      "map_rows": 2932,
+      "position_rmse_m": 0.6773211601719924,
+      "outputs": {
+        "nradar_motion": {
+          "shape": [
+            1200,
+            3
+          ],
+          "backend_max_abs_difference": 0.0
+        },
+        "nradar_slam": {
+          "shape": [
+            2932,
+            4
+          ],
+          "backend_max_abs_difference": 0.0
+        },
+        "lidar_motion": {
+          "shape": [
+            1200,
+            3
+          ],
+          "backend_max_abs_difference": 0.0
+        }
+      }
+    }
+  ],
+  "fresh_environment_check": {
+    "fresh_venv_installation": "requirements-accelerated.txt installed successfully from PyPI",
+    "pip_freeze": [
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "fonttools==4.64.0",
+      "kiwisolver==1.5.1",
+      "llvmlite==0.45.1",
+      "matplotlib==3.10.6",
+      "numba==0.62.1",
+      "numpy==2.3.5",
+      "packaging==26.3",
+      "pillow==12.3.0",
+      "pyparsing==3.3.2",
+      "python-dateutil==2.9.0.post0",
+      "scipy==1.16.3",
+      "six==1.17.0"
+    ],
+    "sample_backends": [
+      "numpy",
+      "numba"
+    ],
+    "sample_sequences": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "max_output_abs_difference_vs_recorded_environment": 1.0658141036401503e-14,
+    "saved_plot": true,
+    "raw_reader_check": {
+      "sequence": [
+        1,
+        1
+      ],
+      "capture": 0,
+      "frames": 10,
+      "workers": 2,
+      "chunk_frames": 4,
+      "point_rows": 1439,
+      "indices_equal": true,
+      "max_point_abs_difference": 1.1102230246251565e-16
+    }
+  }
+}

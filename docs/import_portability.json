@@ -1,0 +1,36 @@
+{
+  "validation_date": "2026-09-10",
+  "python": "3.13.9",
+  "tested_directory_names": [
+    "python_version",
+    "EmoRI",
+    "EmoRI-main 中文 测试.v1"
+  ],
+  "launch_modes": [
+    "direct script from unrelated working directory",
+    "python -m with identifier directory",
+    "public API with spawn main guard"
+  ],
+  "internal_package": "_emori_runtime",
+  "source_files_changed": [
+    "Radar_SLAM_v2_fast.py",
+    "read_6843_accelerated.py",
+    "utilities/radar_slam_mstc_fast.py"
+  ],
+  "function_asts_unchanged": 44,
+  "old_numba_cache_files_preserved": 2,
+  "new_namespace_cache_compiled": true,
+  "cache_reused_after_two_directory_renames": true,
+  "numpy_and_numba_full_sequence_frames": 1200,
+  "max_trajectory_map_gt_abs_difference": 3.552713678800501e-15,
+  "reader_spawn_frames_per_check": 10,
+  "reader_workers": 2,
+  "reader_spawn_modes": [
+    "direct",
+    "module",
+    "API"
+  ],
+  "max_reader_point_abs_difference": 1.1102230246251565e-16,
+  "reader_frame_boundaries_equal": true,
+  "unrelated_utilities_and_python_version_modules_ignored": true
+}
