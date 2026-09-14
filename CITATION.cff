@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the EmoRI paper listed in preferred-citation."
+title: "EmoRI: Python radar-IMU egomotion estimation"
+type: software
+authors:
+  - family-names: "Ding"
+    given-names: "Rong"
+  - family-names: "Jin"
+    given-names: "Haiming"
+  - family-names: "Ding"
+    given-names: "Jianrong"
+  - family-names: "Wang"
+    given-names: "Xiaocheng"
+  - family-names: "Fan"
+    given-names: "Guiyun"
+  - family-names: "Zhu"
+    given-names: "Fengyuan"
+  - family-names: "Tian"
+    given-names: "Xiaohua"
+  - family-names: "Kong"
+    given-names: "Linghe"
+preferred-citation:
+  type: conference-paper
+  title: "Push the Limit of Single-Chip mmWave Radar-Based Egomotion Estimation with Moving Objects in FoV"
+  authors:
+    - family-names: "Ding"
+      given-names: "Rong"
+    - family-names: "Jin"
+      given-names: "Haiming"
+    - family-names: "Ding"
+      given-names: "Jianrong"
+    - family-names: "Wang"
+      given-names: "Xiaocheng"
+    - family-names: "Fan"
+      given-names: "Guiyun"
+    - family-names: "Zhu"
+      given-names: "Fengyuan"
+    - family-names: "Tian"
+      given-names: "Xiaohua"
+    - family-names: "Kong"
+      given-names: "Linghe"
+  collection-title: "Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems"
+  collection-type: "proceedings"
+  year: 2023
+  start: 417
+  end: 430
+  doi: "10.1145/3625687.3625795"
+  url: "https://doi.org/10.1145/3625687.3625795"
+  publisher:
+    name: "Association for Computing Machinery"
+    city: "New York"
+    country: "US"

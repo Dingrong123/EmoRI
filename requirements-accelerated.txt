@@ -1,0 +1,3 @@
+# Optional MSTC acceleration; --backend numpy does not require Numba.
+-r requirements.txt
+numba==0.62.1

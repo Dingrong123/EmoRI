@@ -1,0 +1,6 @@
+# Tested core environment: 64-bit CPython 3.13.9 on Windows.
+# Plotting is included because the estimator renders by default.
+numpy==2.3.5
+scipy==1.16.3
+matplotlib==3.10.6
+numba==0.62.1

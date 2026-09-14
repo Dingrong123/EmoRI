@@ -1,0 +1,43 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Historical local verification/migration reports
+/validation_report.json
+/verification_details.json
+/RELEASE_GUIDE_ZH.md
+
+# Data is an explicit allowlist: two preprocessed examples + documentation.
+# Raw captures, MAT backups, timing reports, and generated outputs stay local.
+/data/*
+!/data/README.md
+!/data/point_cloud/
+!/data/IMU_and_GT/
+!/data/radar_raw_data/
+/data/point_cloud/*
+!/data/point_cloud/pypc_1_1.npy
+!/data/point_cloud/pypc_1_1_indices.npy
+!/data/point_cloud/pypc_2_1.npy
+!/data/point_cloud/pypc_2_1_indices.npy
+/data/IMU_and_GT/*
+!/data/IMU_and_GT/0516env_aligned_imu_1_1.npy
+!/data/IMU_and_GT/0516env_aligned_gt_1_1.npy
+!/data/IMU_and_GT/0516env_aligned_imu_2_1.npy
+!/data/IMU_and_GT/0516env_aligned_gt_2_1.npy
+/data/radar_raw_data/*
+!/data/radar_raw_data/README.md
