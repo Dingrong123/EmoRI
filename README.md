@@ -4,7 +4,7 @@ The implementation code of the paper **[Push the Limit of Single-Chip mmWave Rad
 
 The proposed approach in this paper, namely EmoRI, estimates a mobile platform's motion using a single-chip mmWave radar and an IMU in scenes containing moving objects. This offline Python implementation combines radar velocity with IMU yaw and includes two prepared recordings for immediate use. 
 
-***<u>EmoRI is learning-free and can generalize to various environments! You can quickly reproduce and use it in only 10-30mins!</u>***
+***<u>EmoRI is learning-free and can generalize to various environments! You can quickly reproduce and use it in 10-30mins!</u>***
 
 [Implementation details](docs/IMPLEMENTATION.md).
 
